@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/message.css">
+
+	<link rel="stylesheet" type="text/css" href="Assets/css/reset.css"/>
+	<script type="text/javascript" src="Assets/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="Assets/js/js_z.js"></script>
+	<link rel="stylesheet" type="text/css" href="Assets/plugins/FlexSlider/flexslider.css">
+	<script type="text/javascript" src="Assets/plugins/FlexSlider/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="Assets/js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="Assets/css/thems.css">
+	<link rel="stylesheet" type="text/css" href="Assets/css/responsive.css">
+<link href="/statics/images/apple-touch-icon-57.png" sizes="57x57" rel="apple-touch-icon">
+<link href="/statics/images/apple-touch-icon-72.png" sizes="72x72" rel="apple-touch-icon">
+<link href="/statics/images/apple-touch-icon-114.png" sizes="114x114" rel="apple-touch-icon">
+<title>我们一起来编程？？</title>
+<meta name="keywords" content="PSYLAB"/>
+<meta name="description" content="认知资源 利他行为 自我控制资源">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/theme_trust.js"></script>
+<style type="text/css">
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html,
+body,
+wrapper {
+    height: 100%;
+}
+.iw_poi_title {
+	color: #CC5522;
+	font-size: 14px;
+	font-weight: bold;
+	overflow: hidden;
+	padding-right: 13px;
+	white-space: nowrap
+}
+.iw_poi_content {
+	font: 12px arial, sans-serif;
+	overflow: visible;
+	padding-top: 4px;
+	white-space: -moz-pre-wrap;
+	word-wrap: break-word
+}
+.taocanbg {
+	width:320px;
+	height:510px;
+	padding-top:10px;
+	float:left;
+	margin-right:38px;
+	margin-left: 15px;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.dan {
+	width:320px;
+	height:260px;
+	display:block;
+	background-repeat:no-repeat;
+}
+.taocan_name {
+	width:320px;
+	height:auto;
+	line-height:25px;
+	display:block;
+	border-bottom:#96582a 1px dashed;
+	text-align:center;
+	margin-top:5px;
+	font-family:"microsoft yahei";
+	font-size:16px;
+	color: #281f1d;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.dan:hover {
+	opacity:0.8;
+	filter:alpha(opacity=40);
+}
+.img-black {
+	text-align: center;
+	font-size: 16px;
+	line-height: 45px;
+	font-family:"microsoft yahei";
+	color: #666;
+}
+.img-red {
+	font-size: 20px;
+	color: #e9544c;
+	font-weight: bold;
+	line-height: 50px;
+	font-family:"microsoft yahei";
+}
+.img-red2 {
+	font-size: 16px;
+	color: #e9544c;
+	font-weight: bold;
+	font-family:"microsoft yahei";
+}
+.taocan_con {
+	height:auto;
+	width:300px;
+	font-family:"microsoft yahei";
+	line-height:20px;
+	color:#130c0e;
+	font-size: 14px;
+	text-decoration:none;
+	font-weight: normal;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	padding: 0px;
+}
+.clentaocan {
+	margin:0px auto;
+	max-width:1120px;
+	height:100%;
+}
+.taocan_con > p {
+	text-decoration:none;
+	margin:0px 0px 5px 0px;
+	font-size:14px;
+	height:auto;
+	max-width:280px;
+	border-bottom:#96582a 1px dashed;
+}
+.tese {
+	font-size:14px;
+	font-weight:bold;
+}
+.pcbg {
+	background: url(images/pcbg.png) no-repeat;
+}
+.phonebg {
+	background:url(images/phone.png) no-repeat;
+}
+.weixinbg {
+	background:url(images/weixinbg.png) no-repeat;
+}
+.wifibg {
+	background:url(images/wifibg.png) no-repeat;
+}
+.mailbg {
+	background: url(images/mailbg.png) no-repeat;
+}
+.shop {
+    width:100px;
+    height:66px;
+    display:block;
+    margin:0px auto;
+    background-image: url(images/hot.gif);
+    background-position:66px -8px;
+    background-repeat:no-repeat;
+}
+.btn{
+	margin-right:100px;
+}
+.p40{
+	padding:370px;
+}
+.mt20{
+	margin-top:250px;
+}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+  jQuery(document).ready(function() {
+	  jQuery('#openSidebar').click(function() {
+	      jQuery('.wrapper').toggleClass('openNav');
+	  });
+	  jQuery('#menu a').click(function() {
+	      jQuery('.wrapper').removeClass('openNav');
+	  });
+  });
+</script>
+<script type="text/javascript" src="js/fdb08818984846ce8335f4a6013d3cde.js"></script>
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="sidebar">
+		<div class="clearfix k1120">
+			<div class="navBox" id="openSidebar">
+				<a href="#" class="navOpen"></a>
+			</div>
+			<div id="menu">
+        <ul class="clearfix">
+					<li><a href="#home" class="nav_home current"><span>实验首页<br />
+            </span></a> </li>
+          <li><a href="#brief intro of experiment" class="nav_brief intro of experiment"><span>实验简介<br />
+           </span></a> </li>
+          <li><a href="#purpose of experiment" class="nav_purpose of experiment"><span>实验目的<br />
+            </span></a> </li>
+          <li><a href="#instrument & materials" class="nav_instrument & materials"><span>仪器与材料<br />
+            </span></a> </li>
+          <li><a href="#methods of experiment" class="nav_methods of experiment"><span> 实验方法<br />
+            </span></a> </li>
+          <li><a href="#results & discussion" class="nav_results & discussion"><span>结果与讨论<br />
+            </span></a> </li>
+						<li><a href="#references of experiment" class="nav_references of experiment"><span>参考文献<br />
+							</span></a> </li>
+          <li><a href="#home" class="nav_home current" ><span class="shop">我要当被试<br />
+            </span></a> </li>
+        </ul>
+			</div>
+		</div>
+	</div>
+	<div class="pageMain">
+		<div id="header">
+			<div class="k1120 clearfix">
+			<div style="float:left;"><img src="zn pic/PSYLABlogo.jpg" /></div>
+			</div>
+		</div>
+		<div id="home" class="scrol-page">
+
+			<div class="banner">
+				<div class="b_1">
+					<div class="k1120 clearfix">
+						<div class="b_pic">
+							<div class="mac">
+								<img src="zn pic/问卷二维码.jpg" />
+							</br>
+								<a href="#"><a href="https://bnupsych.asia.qualtrics.com/jfe/form/SV_3rVcjVoAXffPV6l" target="_blank"><button class="btn btn-success">填写问卷</button></a></a>
+							</div>
+							<div class="ipad">
+								<img src="zn pic/在线实验二维码.jpg" />
+								</br>
+								<a href="#"><a href="http://research.millisecond.com/weicong1203/mentalrotationperfect3.web " target="_blank"><button class="btn btn-danger">参加实验</button></a></a>
+							</div>
+						</div>
+						<div class="b_text">
+							<h2>认知资源对利他行为的影响</h2>
+							</br>
+							<h2>——以自我控制资源为中介变量</h2>
+						  </br>
+							</br>
+							<h3>关键词：认知资源 利他行为 自我控制资源</h3>
+							</br>
+							</br>
+							<h4>我们一起来编程？？小组</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="b_2">
+					<div class="k1120 clearfix">
+						<h1></h1>
+						<br/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="brief intro of experiment" class="scrol-page">
+		<h2 class="title"><span>实验简介</span></h2>
+		<h5 class="infoText">说吧，你有啥背景，快说出来吓我一跳~</h5>
+
+
+			<div class="space_hx">&nbsp;</div>
+			<ul class="sv_l clearfix">
+			  <li>
+			      <b><a href=""><img src="zn pic/认知资源.JPG" alt=""/></a></b>
+			        <h3>认知资源</h3>
+			    </li>
+			    <li>
+			      <b><a href=""><img src="zn pic/自我控制.JPG" alt=""/></a></b>
+			        <h3>自我控制</h3>
+			    </li>
+			    <li>
+			      <b><a href=""><img src="zn pic/利他行为.JPG" alt=""/></a></b>
+			        <h3>利他行为</h3>
+			    </li>
+					<h2>—————————————————————————————————————————————————</h2>
+				  </br>
+					<h4>“自我控制”指的是个体自主调节行为，并使其与个人价值和社会期望相匹配的能力</h4>
+          </br><h4>如在拥有控制体重的目标时，面对甜食能抵制诱惑，选择更健康的食物的能力，或者能克制住分心的念头，专心地完成一项任务的能力</h4>
+          </br><h4>社会心理学家Baumeister等于1994年首次提出资源模型，认为自我控制资源是有限的，之后不少研究支持了该模型</h4>
+				</br><h4>“认知资源”是一种用于支持个体成功执行认知加工的能量，个体必须使用认知资源才能成功执行控制化的认知操作，也被认为是有限的</h4>
+          </br><h4>近期有研究证明自我控制资源和认知资源是相互影响的</h4>
+					</br><h4>有研究表明，对多种商品做出选择后，被试的握力坚持任务表现更差，出现更多拖延行为，从而证明认知资源损耗对自我控制资源的影响</h4>
+          </br></br>
+				</br><h4>“利他行为”指自愿帮助他人而不期望任何回报的行为，比如愿意帮他人无偿照看东西，愿意支教、做义工等等</h4>
+			</br><h4>不少研究者认为，个体常需要“自我控制”，如压抑利己的内部冲动才能做出利他行为</h4>
+					</br><h4>因此处于自我损耗的个体或许更倾向于考虑自己的利益，减少利他行为，增加不道德行为</h4>
+					</br><h4>任俊等人于2014年使用stroop任务和独裁者任务进行实验，得出自我损耗的被试表现更少的好行为，趋向做出利己行为，费定舟也采用了相同的双任务范式得到相同结论</h4>
+					</br><h4>江伟在2015年的研究得到，积极情绪的被试在自我控制资源损耗状态下任务表现与无损耗的被试无显著差异，所以情绪也有可能对实验结果产生影响</h4>
+          </br></br>
+				</br><h4>我们的“实验假设”为</h4>
+					</br><h4>经过心理旋转任务经历认知资源的消耗后，由于自我控制资源的消耗，被试的利他行为会减少</h4>
+			</ul>
+
+		</div>
+		<div id="purpose of experiment" class="scrol-page">
+			<h2 class="title"><span>实验目的</span></h2>
+			<h5 class="infoText">控制啥变量啊？自变量咋整？因变量是啥？咋回事儿啊？</h5>
+
+			<div class="space_hx">&nbsp;</div>
+			<ul class="sv_l clearfix">
+				<li>
+						<b><a href=""><img src="zn pic/猫眼镜.JPG" alt=""/></a></b>
+							<h4>让本喵瞅瞅emmmm</h4>
+							</br>
+							<h4>你们小组挺牛皮啊</h4>
+					</li>
+					<li>
+					</br>
+					</br>
+						<h3>控制情绪变量</h3>
+						</br>
+						<h3>以是否消耗认知资源为自变量</h3>
+           </br>
+						<h3>利他行为是因变量</h3>
+						</br>
+						<h3>自我控制资源为中介变量</h3>
+						</br>
+						<h3>探究认知资源的消耗是否减少利他行为</h3>
+					</li>
+			</ul>
+<!--加<li>是可以左对齐，不加就是居中-->
+		</div>
+	<div id="instrument & materials" class="scrol-page">
+		<h2 class="title"><span>仪器与材料</span></h2>
+		<h5 class="infoText">看图还不明白？把鼠标放在下面的图上，有惊喜哦~</h5>
+		<div class="case k1120">
+			<ul class="clearfix">
+				<li>
+				<div class="view-tenth">
+					<img src="zn pic/问卷的图.JPG"><a class="mask" target="_blank">
+					<h2><font color='#FFCC33'>在线调查Qualtrics</font></h2>
+					<p>
+						40题+
+					</p>
+					<p>
+						用户友好型界面
+					</p>
+					</a>
+				</div>
+				</li>
+				<li>
+				<div class="view-tenth">
+					<img src="zn pic/实验的图.JPG"><a class="mask" target="_blank">
+					<h2><font color='#FFCC33'>实验编程Inquisit 4</font></h2>
+					<p>
+						80试次
+					</p>
+					<p>
+						随机两种实验
+					</p>
+					</a>
+				</div>
+				</li>
+				<li>
+				<div class="view-tenth">
+					<img src="zn pic/显示器的图.JPG"><a class="mask" target="_blank">
+					<h2><font color='#FFCC33'>显示器规格</font></h2>
+					<p>
+						刷机率50Hz
+					</p>
+					<p>
+						显示屏1024*768、64位
+					</p>
+					</a>
+				</div>
+				</li>
+				<li>
+				<div class="view-tenth">
+					<img src="zn pic/SPSS的图.JPG"><a class="mask" target="_blank">
+					<h2><font color='#FFCC33'>数据处理SPSS 18.0</font></h2>
+					<p>
+						非参检验、方差分析等统计方法
+					</p>
+					</a>
+				</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="methods of experiment" class="scrol-page">
+		<h2 class="title"><span>实验方法</span></h2>
+		<h5 class="infoText">这真是一扇通往新世界的窗子！</h5>
+		<div class="space_hx">&nbsp;</div>
+		<ul class="sv_l clearfix">
+			<li>
+					</br></br></br></br><b><a href=""><img src="zn pic/左边.JPG" alt=""/></a></b>
+				</li>
+				<li>
+					</br></br><h4>本inquisit程序采用心理旋转范式</h4>
+				</br><h4>分两个block，随即呈现一个block给被试，即被试被随机分到实验组和控制组</h4>
+			</br></br><h4>实验组 block采用消耗被试自控资源的心理旋转范式</h4>
+				</br><h4>首先要求被试看到正“R”按“Z”键，看到反“R”按“/”键</h4>
+				</br><h4>据经典心理旋转实验的结果，被试判断旋转180的R是最困难的</h4>
+			</br><h4>故为了消耗被试的自控资源，刺激材料“R”有10种</h4>
+				</br><h4>分别为正120,正150,正180,正210,正240,反120,反150,反180,反210,反240</h4>
+			</br><h4>被试反应正确反馈“√”，反应错误反馈“×”</h4>
+				</br><h4>每完成20个试次后，要求被试对正反“R”的反应调换</h4>
+				</br><h4>被试总共需要调换3次反应方式，一共有80个试次</h4>
+				</br></br><h4>控制组 block为简单的心理旋转范式，一共做80个试次</h4>
+				</br><h4>无反应方式的调换，反馈方式同实验组，刺激材料“R”较实验组简单，有10种</h4>
+				</br><h4>分别为正0,正30,正60,正300,正330,反0,反30,反60,反300,反330</h4>
+			</br></br><h4>操作方法 被试首先进行inquisit心理旋转实验，经过实验组或控制组的处理后</h4>
+				</br><h4>自动跳转到测量情绪的问卷，做完之后再跳转到测量利他行为的问卷</h4>
+				</br><h4>情绪测量用于解释“利他行为的改变是由自控资源的消耗还是情绪造成的”问题</h4>
+				</li>
+				<li>
+						</br></br></br></br><b><a href=""><img src="zn pic/右边.JPG" alt=""/></a></b>
+					</li>
+		</ul>
+	</div>
+	<div id="results & discussion" class="scrol-page">
+		<h2 class="title"><span>结果与讨论</span></h2>
+		<h5 class="infoText">我们预期的结果讨论与展望</h5>
+		<div class="space_hx">&nbsp;</div>
+		<ul class="sv_l clearfix">
+				<h3>预期结果</h3>
+				</br>
+				<h4>无论情绪是处于积极、消极还是中性状态被试在利他行为表现都不存在显著差异，确定利他行为不受无关变量，即情绪状态的干扰</h4>
+				</br><h4>经过认知资源损耗的被试，在利他行为的评分显著小于没有经过损耗的被试</h4>
+			</br></br>
+				<h3>结果讨论和展望</h3>
+				</br>
+				<h4>以往研究只探讨了认知资源与自控资源的关系，以及自控资源与利他行为的关系，因此我们再前人的基础上探究认知资源对利他行为是否产生影响</h4>
+				</br><h4>不同与以往研究，我们采用心理旋转任务来进行认知资源的消耗</h4>
+				</br><h4>因为心理旋转任务需要较高的认知能力参与，所以推理认为多个高难度试次会对认知资源进行耗损</h4>
+				</br><h4>但其实还存在不严谨性，应该实验前验证心理旋转任务对认知资源是否产生耗损以及耗损程度</h4>
+				</br><h4>同时我们将独裁者任务转为利他行为的问卷测量，虽然测量内容更加贴近生活实际</h4>
+				</br><h4>但是问题中的行为有可能是被试长期以来较为稳定的习惯性做法，不容易受到当下状态的影响，如何尽可能提高生态效度是未来值得研究的方向</h4>
+    </br></br>  <b><a href=""><img src="zn pic/统计图.JPG" alt=""/></a></b>
+		</ul>
+
+	</div>
+	<div id="references of experiment" class="scrol-page">
+		<h2 class="title"><span>参考文献</span></h2>
+
+		<div class="space_hx">&nbsp;</div>
+		<ul class="sv_l clearfix">
+					<h4>卜庆阳. (2016). 自我控制的内涵:基于资源模型与双系统模型的解释. 社会心理科学(12), 17-20.</h4>
+					</br><h4>詹鋆, & 任俊. (2012). 自我控制与自我控制资源. 心理科学进展, 20(9), 1457-1466.</h4>
+					</br><h4>黎建斌. (2013). 自我控制资源与认知资源相互影响的机制:整合模型. 心理科学进展, 21(2), 235-242.</h4>
+					</br><h4>蒋达, 王歆睿, 傅丽, & 周仁来. (2008). 内隐利他行为的实验研究. 心理科学,31(1), 79-82.</h4>
+					</br><h4>李雪榴. (2010). 心理旋转研究技术综述. 广西心理学会第十五次学术研讨会.</h4>
+					</br><h4>江伟. (2015). 积极情绪对自我损耗下自我控制的影响. 心理研究, 8(3), 30-36.</h4>
+					</br><h4>费定舟, 钱东海, & 黄旭辰. (2016). 利他行为的自我控制过程模型:自我损耗下的道德情绪的正向作用. 心理学报, 48(9), 1175-1183.</h4>
+					</br><h4>任俊, 李瑞雪, 詹鋆, 刘迪, 林曼, & 彭年强. (2014). 好人可能做出坏行为的心理学解释——基于自我控制资源损耗的研究证据. 心理学报, 46(6), 841-851.</h4>
+		</ul>
+
+	</div>
+	<div class="scrol-page">
+		<h2 class="title"><span>联系我们</span></h2>
+		<div class="infoText">
+			如果您在做问卷或者做实验或阅读我们的实验报告时，发现任何问题或者有任何疑问，请联系我们，谢谢！
+		</div>
+		<div class="contactBox" id="contact">
+			<div class="contactFoot">
+				<div class="clearfix k1120">
+					<dl>
+						<dt>联系方式</dt>
+						<dd>
+						<p>
+							中国 · 北京 · 海淀区新街口外大街19号
+						</p>
+						<p>
+							邮箱：201611060101@mail.bnu.edu.cn
+						</p>
+						<p>
+							邮箱：201611060104@mail.bnu.edu.cn
+						</p>
+						<p>
+							邮箱：201611060116@mail.bnu.edu.cn
+						</p>
+						<p>
+							邮箱：201611060143@mail.bnu.edu.cn
+						</p>
+						<p>
+							邮箱：201611060167@mail.bnu.edu.cn
+						</p>
+						<p>
+							邮箱：201611060224@mail.bnu.edu.cn
+						</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>扫我扫我！这里有一些问题等你来答！</dt>
+						<dd>
+						<p>
+							<img src="zn pic/问卷二维码.jpg"/>
+						</p>
+						<p>
+							<a href="#">或者点我：<a href="https://bnupsych.asia.qualtrics.com/jfe/form/SV_3rVcjVoAXffPV6l" target="_blank">问卷链接</a></a>
+						</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>点我点我！快体验一下我们的实验吧！</dt>
+						<dd>
+						<p>
+							<img src="zn pic/在线实验二维码.jpg"/>
+						</p>
+						<p>
+							<a href="#">点我：<a href="http://research.millisecond.com/weicong1203/mentalrotationperfect3.web" target="_blank">实验链接</a></a>
+						</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+      <div style="width:100%;" id="dituContent">
+      </div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	 Copyright © 2017-2018 .我们一起来编程？？ All Rights Reserved.
+</div>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(116.372304,39.967488);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_TOP_LEFT});
+	map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{title:"PSYLAB",content:"爱你哦",point:"116.372708|39.96641",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+</body>
+</html>
